@@ -16,6 +16,6 @@ fi
 
 ln -s "$HOME/.dotfiles/bashrc" "$HOME/.bashrc"
 
-ln -s "$HOME/.dotfiles/bash_aliases/" "$HOME/.bash_aliases"
+ln -s "$HOME/.dotfiles/bash_aliases" "$HOME/.bash_aliases"
 
 ln -s "$HOME/.dotfiles/init.vim" "$HOME/.config/nvim/init.vim"
