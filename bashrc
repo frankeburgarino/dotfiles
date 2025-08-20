@@ -112,6 +112,9 @@ if ! shopt -oq posix; then
   fi
 fi
 
+export EDITOR='nvim'
+export VISUAL='nvim'
+
 ################################
 
 clear
