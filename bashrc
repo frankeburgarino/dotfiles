@@ -117,5 +117,6 @@ export VISUAL='nvim'
 
 ################################
 
+cd ~
 clear
 fastfetch
