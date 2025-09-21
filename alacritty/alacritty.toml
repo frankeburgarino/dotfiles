@@ -1,9 +1,8 @@
 [general]
 import = ["~/.config/alacritty/cyberdream.toml"]
 
-[window.dimensions]
-columns = 120
-lines = 30
+[window]
+dimensions = { columns = 120, lines = 30 }
 
 [font]
 normal = { family = "Hack Nerd Font Mono", style = "Regular" }
