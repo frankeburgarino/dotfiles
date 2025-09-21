@@ -1,0 +1,6 @@
+[window.dimensions]
+columns = 120
+lines = 30
+
+[font]
+normal = { family = "Hack Nerd Font Mono", style = "Regular" }
