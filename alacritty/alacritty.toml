@@ -1,3 +1,6 @@
+[general]
+import = ["~/.config/alacritty/cyberdream.toml"]
+
 [window.dimensions]
 columns = 120
 lines = 30
