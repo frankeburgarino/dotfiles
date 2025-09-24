@@ -8,6 +8,14 @@ if [ -f "$HOME/.bash_aliases" ]; then
 	rm "$HOME/.bash_aliases"
 fi
 
+if [ -d "$HOME/.config/alacritty" ]; then
+	rm -r "$HOME/.config/alacritty"
+fi
+
+if [ -d "$HOME/.config/fastfetch" ]; then
+	rm -r "$HOME/.config/fastfetch"
+fi
+
 if [ -d "$HOME/.config/nvim" ]; then
 	rm -r "$HOME/.config/nvim"
 fi
@@ -23,5 +31,9 @@ fi
 ln -s "$HOME/.dotfiles/bashrc" "$HOME/.bashrc"
 
 ln -s "$HOME/.dotfiles/bash_aliases" "$HOME/.bash_aliases"
+
+ln -s "$HOME/.dotfiles/alacritty" "$HOME/.config/alacritty"
+
+ln -s "$HOME/.dotfiles/fastfetch" "$HOME/.config/fastfetch"
 
 ln -s "$HOME/.dotfiles/nvim" "$HOME/.config/nvim"
