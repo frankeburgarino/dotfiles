@@ -12,6 +12,14 @@ if [ -d "$HOME/.config/nvim" ]; then
 	rm -r "$HOME/.config/nvim"
 fi
 
+if command -v dnf >/dev/null 2>&1; then
+	sudo dnf install -y btop duf fastfetch git neovim ripgrep
+elif command -v apt >/dev/null 2>&1; then
+	sudo apt update -y
+	sudo apt install -y btop duf fastfetch git neovim ripgrep
+fi
+
+
 ln -s "$HOME/.dotfiles/bashrc" "$HOME/.bashrc"
 
 ln -s "$HOME/.dotfiles/bash_aliases" "$HOME/.bash_aliases"
