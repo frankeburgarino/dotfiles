@@ -28,9 +28,9 @@ elif command -v apt >/dev/null 2>&1; then
 fi
 
 
-ln -s "$HOME/.dotfiles/bashrc" "$HOME/.bashrc"
+ln -s "$HOME/.dotfiles/bash/bashrc" "$HOME/.bashrc"
 
-ln -s "$HOME/.dotfiles/bash_aliases" "$HOME/.bash_aliases"
+ln -s "$HOME/.dotfiles/bash/bash_aliases" "$HOME/.bash_aliases"
 
 ln -s "$HOME/.dotfiles/alacritty" "$HOME/.config/alacritty"
 
