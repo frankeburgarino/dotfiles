@@ -8,6 +8,10 @@ if [ -f "$HOME/.bash_aliases" ]; then
 	rm "$HOME/.bash_aliases"
 fi
 
+if [ ! -d "$HOME/.config" ]; then
+	mkdir "$HOME/.config"
+fi
+
 if [ -d "$HOME/.config/alacritty" ]; then
 	rm -r "$HOME/.config/alacritty"
 fi
@@ -21,10 +25,10 @@ if [ -d "$HOME/.config/nvim" ]; then
 fi
 
 if command -v dnf >/dev/null 2>&1; then
-	sudo dnf install -y btop duf fastfetch git neovim ripgrep
+	sudo dnf install -y btop duf fastfetch gcc git neovim ripgrep
 elif command -v apt >/dev/null 2>&1; then
 	sudo apt update -y
-	sudo apt install -y btop duf fastfetch git neovim ripgrep
+	sudo apt install -y btop duf fastfetch gcc git neovim ripgrep
 fi
 
 
