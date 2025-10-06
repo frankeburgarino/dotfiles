@@ -1,10 +1,10 @@
 #!/bin/bash
 
-if [ -f "$HOME/.bashrc" ]; then
+if [ -L "$HOME/.bashrc" ]; then
 	rm "$HOME/.bashrc"
 fi
 
-if [ -f "$HOME/.bash_aliases" ]; then
+if [ -L "$HOME/.bash_aliases" ]; then
 	rm "$HOME/.bash_aliases"
 fi
 
@@ -12,15 +12,15 @@ if [ ! -d "$HOME/.config" ]; then
 	mkdir "$HOME/.config"
 fi
 
-if [ -d "$HOME/.config/alacritty" ]; then
+if [ -L "$HOME/.config/alacritty" ]; then
 	rm -r "$HOME/.config/alacritty"
 fi
 
-if [ -d "$HOME/.config/fastfetch" ]; then
+if [ -L "$HOME/.config/fastfetch" ]; then
 	rm -r "$HOME/.config/fastfetch"
 fi
 
-if [ -d "$HOME/.config/nvim" ]; then
+if [ -L "$HOME/.config/nvim" ]; then
 	rm -r "$HOME/.config/nvim"
 fi
 
