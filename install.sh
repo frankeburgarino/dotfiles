@@ -25,10 +25,10 @@ if [ -L "$HOME/.config/nvim" ]; then
 fi
 
 if command -v dnf >/dev/null 2>&1; then
-	sudo dnf install -y btop duf fastfetch gcc git neovim ripgrep
+	sudo dnf install -y btop duf fastfetch gcc git neovim ripgrep tmux
 elif command -v apt >/dev/null 2>&1; then
 	sudo apt update -y
-	sudo apt install -y btop duf fastfetch gcc git neovim ripgrep
+	sudo apt install -y btop duf fastfetch gcc git neovim ripgrep tmux
 fi
 
 

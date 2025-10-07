@@ -26,5 +26,6 @@ export EDITOR='nvim'
 export VISUAL='nvim'
 
 cd ~
+tmux
 clear
 fastfetch
