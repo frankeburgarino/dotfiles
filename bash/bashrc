@@ -27,5 +27,6 @@ export VISUAL='nvim'
 
 cd ~
 tmux
+tmux source-file ~/.config/tmux/tmux.conf
 clear
 fastfetch
