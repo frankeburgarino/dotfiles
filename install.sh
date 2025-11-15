@@ -1,10 +1,10 @@
 #!/bin/bash
 
-if [ -L "$HOME/.bashrc" ]; then
+if [ -e "$HOME/.bashrc" ]; then
 	rm "$HOME/.bashrc"
 fi
 
-if [ -L "$HOME/.bash_aliases" ]; then
+if [ -e "$HOME/.bash_aliases" ]; then
 	rm "$HOME/.bash_aliases"
 fi
 
