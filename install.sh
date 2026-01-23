@@ -12,23 +12,23 @@ if [ ! -d "$HOME/.config" ]; then
 	mkdir "$HOME/.config"
 fi
 
-if [ -L "$HOME/.config/alacritty" ]; then
+if [ -e "$HOME/.config/alacritty" ]; then
 	rm -r "$HOME/.config/alacritty"
 fi
 
-if [ -L "$HOME/.config/fastfetch" ]; then
+if [ -e "$HOME/.config/fastfetch" ]; then
 	rm -r "$HOME/.config/fastfetch"
 fi
 
-if [ -L "$HOME/.config/nvim" ]; then
+if [ -e "$HOME/.config/nvim" ]; then
 	rm -r "$HOME/.config/nvim"
 fi
 
-if [ -L "$HOME/.config/tmux" ]; then
+if [ -e "$HOME/.config/tmux" ]; then
 	rm -r "$HOME/.config/tmux"
 fi
 
-if [ -L "$HOME/.config/rofi" ]; then
+if [ -e "$HOME/.config/rofi" ]; then
 	rm -r "$HOME/.config/rofi"
 fi
 
