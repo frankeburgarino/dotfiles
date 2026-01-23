@@ -1,0 +1,87 @@
+* {
+	white: #FFFFFF;
+	twhite: #FFFFFFDD;
+	black: #000000;
+	tblack: #000000DD;
+	grey:  #999999;
+	tgrey:	#999999DD;
+	t:	#00000000;
+
+	spacing: 0.1em;
+	background-color: #00000000;
+	border-color: #222222FF;
+	anchor: north;
+	location: center;
+}
+
+window {
+	width: 32em;
+	padding: 0em;
+	border: 0em;
+	background-color: @t;
+}
+
+mainbox {
+	padding: 0em;
+	border: 0em;
+	spacing: 0.5em;
+	background-color: @t;
+}
+
+inputbar {
+	spacing: 0;
+	border: 0.05em;
+	padding: 0.5em;
+	border-radius: 0.5em;
+	background-image: linear-gradient(to bottom, #FFFFFFFF, #555555FF);
+	children: [prompt,textbox-prompt-colon,entry];
+}
+
+prompt {
+	padding: 0.25em;
+	border-radius: 0.25em;
+	background-color: #00000022;
+}
+
+textbox-prompt-colon {
+	expand: false;
+	str: ":";
+	padding: 0.25em;
+}
+
+entry {
+	padding: 0.25em;
+	border-radius: 0.25em;
+	background-color: #00000022;
+}
+
+listview {
+	border: 0.05em;
+	padding: 0.5em;
+	border-radius: 0.5em;
+	lines: 8;
+	background-image: linear-gradient(to bottom, #FFFFFFFF, #555555FF);
+}
+
+element {
+	border: 0;
+	border-radius: 0.25em;
+	padding: 0.25em;
+	highlight: bold ;
+}
+
+element-icon {
+	size: 2em;
+}
+
+element-text {
+	padding: 0.5em;
+}
+
+element normal.normal, element alternate.normal {
+	background-color: #00000022;
+}
+
+element selected.normal {
+	background-color: #FF77FF77;
+}

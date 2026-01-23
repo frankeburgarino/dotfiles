@@ -28,11 +28,15 @@ if [ -L "$HOME/.config/tmux" ]; then
 	rm -r "$HOME/.config/tmux"
 fi
 
+if [ -L "$HOME/.config/rofi" ]; then
+	rm -r "$HOME/.config/rofi"
+fi
+
 if command -v dnf >/dev/null 2>&1; then
-	sudo dnf install -y btop duf fastfetch gcc git neovim ripgrep tmux
+	sudo dnf install -y btop duf fastfetch gcc git neovim ripgrep rofi tmux
 elif command -v apt >/dev/null 2>&1; then
 	sudo apt update -y
-	sudo apt install -y btop duf fastfetch gcc git neovim ripgrep tmux
+	sudo apt install -y btop duf fastfetch gcc git neovim ripgrep rofi tmux
 fi
 
 
@@ -45,5 +49,7 @@ ln -s "$HOME/.dotfiles/alacritty" "$HOME/.config/alacritty"
 ln -s "$HOME/.dotfiles/fastfetch" "$HOME/.config/fastfetch"
 
 ln -s "$HOME/.dotfiles/nvim" "$HOME/.config/nvim"
+
+ln -s "$HOME/.dotfiles/rofi" "$HOME/.config/rofi"
 
 ln -s "$HOME/.dotfiles/tmux" "$HOME/.config/tmux"
