@@ -24,6 +24,7 @@ show-icons: true;
 /*	window-match-fields: "all";*/
 /*	icon-theme: ;*/
 /*	drun-match-fields: "name,generic,exec,categories,keywords";*/
+drun-match-fields: "name";
 /*	drun-categories: ;*/
 /*	drun-exclude-categories: ;*/
 /*	drun-show-actions: false;*/
