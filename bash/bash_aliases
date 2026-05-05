@@ -6,4 +6,6 @@ alias ff='fastfetch'
 alias aptup='sudo apt update && sudo apt upgrade -y'
 alias rg='rg -p'
 alias less='less -R'
+alias debup='sudo apt update && sudo apt upgrade -y && sudo flatpak upgrade -y'
+alias fedup='sudo dnf upgrade -y && sudo flatpak upgrade -y'
 
