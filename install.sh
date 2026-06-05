@@ -20,6 +20,10 @@ if [ -e "$HOME/.config/fastfetch" ]; then
 	rm -r "$HOME/.config/fastfetch"
 fi
 
+if [ -e "$HOME/.config/kglobalshortcutsrc" ]; then
+	rm "$HOME/.config/kglobalshortcutsrc"
+fi
+
 if [ -e "$HOME/.config/nvim" ]; then
 	rm -r "$HOME/.config/nvim"
 fi
@@ -47,6 +51,8 @@ ln -s "$HOME/.dotfiles/bash/bash_aliases" "$HOME/.bash_aliases"
 ln -s "$HOME/.dotfiles/alacritty" "$HOME/.config/alacritty"
 
 ln -s "$HOME/.dotfiles/fastfetch" "$HOME/.config/fastfetch"
+
+ln -s "$HOME/.dotfiles/kglobalshortcutsrc" "$HOME/.config/kglobalshortcutsrc"
 
 ln -s "$HOME/.dotfiles/nvim" "$HOME/.config/nvim"
 
