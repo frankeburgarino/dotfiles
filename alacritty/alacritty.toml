@@ -1,5 +1,5 @@
 [general]
-import = ["~/.config/alacritty/cyberdream.toml"]
+import = ["~/.config/alacritty/srcery.toml"]
 
 [window]
 dimensions = { columns = 120, lines = 30 }

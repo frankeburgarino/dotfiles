@@ -3,7 +3,7 @@ vim.g.loaded_netrwPlugin = 1
 
 require("config.lazy")
 
-vim.cmd.colorscheme("cyberdream")
+vim.cmd.colorscheme("srcery")
 
 vim.cmd("set number")
 vim.cmd("set tabstop=2")

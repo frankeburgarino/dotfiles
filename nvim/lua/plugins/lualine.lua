@@ -5,7 +5,7 @@ return {
 		config = function()
 			require('lualine').setup({
 				options = {
-					theme = require('plugins.lualine.themes.cyberdream'),
+					theme = require('plugins.lualine.themes.srcery'),
 				},
 			})
 		end,
